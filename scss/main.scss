@@ -1,0 +1,1101 @@
+//! Google fonts
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;700&family=Ubuntu:wght@500;700&display=swap'); 
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+
+}
+
+body{
+    background: hsl(0, 26%, 96%);
+
+    
+
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+
+
+
+.first-screen{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: url("../../images/bg-pattern-intro-desktop.svg");
+    background-position: center;
+    background-size: 150%;
+    padding: 4rem 10rem;
+    border-bottom-left-radius: 10rem;
+    background-repeat: no-repeat;
+    background-color: hsl(353, 100%, 62%);
+    flex-direction: column;
+
+
+
+
+
+
+    header{
+        .container{
+            display: flex;
+            align-items: center;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+
+
+
+
+            .header-wrapper{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+
+                .header-left{
+                    display: flex;
+                    column-gap: 6rem;
+                    align-items: center;
+    
+    
+
+
+                    .header-navbar{
+                        .navbar-list{
+                            display: flex;
+                            column-gap: 2.5rem;
+    
+                            .navbar-item{
+                                display: flex;
+                                align-items: end;
+                                column-gap: 0.7rem;
+                                transition: .3s;
+                                
+
+
+                                &:hover{
+                                    .drop-menu{
+                                        display: flex;
+                                    }
+                                }
+
+                                &:hover >a{
+                                    text-decoration: underline;
+
+                                }
+
+
+                                &:hover i{
+                                    transform: rotate(-180deg);
+                                }
+                                a{
+                                    font-family: 'Ubuntu', sans-serif;
+                                    font-size: 1.6rem;
+                                    color: white;
+                                    transition: .1s ease all;
+                                    &:hover{
+                                        text-decoration: underline;
+
+                                    }
+
+                                }
+
+                                i{
+                                    font-size: 1.6rem;
+                                    color:white;
+                                    transition: .5s;
+
+                                }
+
+
+
+                                .drop-menu{
+                                    display: flex;
+                                    flex-direction: column;
+                                    position: absolute;
+                                    background-color: white;
+                                    box-shadow: 10px 10px 23px -5px rgba(0,0,0,0.75);
+                                    padding: 3rem  2rem;
+                                    padding-left: 2rem;
+                                    padding-right: 5rem;
+                                    border-radius: 1rem;
+                                    transition: .5s;
+                                    display: none;
+
+                                    ul{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 1rem;
+                                    }
+                                    
+                                    a{
+                                        color: black;
+                                        opacity: 0.6;
+                                    }
+
+                                    li{
+                                        &:hover .drop-link{
+                                            text-decoration: none;
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+
+                                .drop-product{
+                                    top: 10.2rem;
+                                    left: 28rem;
+                                }
+
+                                .drop-company{
+                                    top: 10.5rem;
+                                    left: 37rem;
+                                }
+
+                                .drop-connect{
+                                    top: 10.3rem;
+                                    left: 49rem;
+                                }
+                            }
+                        }
+
+                        #navbar-mobile{
+                            display: none;
+                        }
+                    }
+                    }
+                    .account-manager{
+                        display: flex;
+                        column-gap: 4rem;
+    
+    
+                        .login{
+                            a{
+                                font-family:'Ubuntu', sans-serif;
+                                font-size: 1.4rem;
+                                font-weight: 700;
+                                color: white;
+    
+                            }
+                        }
+    
+                        .sign-up{
+                            a{
+                                font-family: 'Ubuntu', sans-serif;
+                                font-weight: 700;
+                                font-size: 1.4rem;
+                                color:#FF3D54;
+                                background-color: white;
+                                padding: 1.5rem 4rem;
+                                border-radius: 10rem;
+                                transition: 0.5s ease all;
+    
+    
+                                &:hover{
+                                    background-color: #FF7A85;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+    
+                    .header-bar{
+                        display: none;
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    .get-started{
+        .get-wrapper{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20rem;
+            margin-bottom: 35rem;
+
+
+
+            .get-title{
+                h3{
+                    color: white;
+                    font-size: 5.6rem;
+                    font-family: 'Overpass', sans-serif;
+                }
+            }
+
+            .get-text{
+                p{
+                    color: white;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-size: 1.9rem;
+                    text-align: center;
+                    margin-top: 4.1rem;
+
+                }
+            }
+
+            .get-buttons{
+                width: 110%;
+                display: flex;
+                justify-content: center;
+                column-gap: 3rem;
+                margin-top: 4rem;
+
+                .start-free{
+                    a{
+                        color: #FF3D54;
+                        background-color: white;
+                        font-size: 1.4rem;
+                        padding: 1rem 2rem;
+                        border-radius: 20rem;
+                        font-weight: 700;
+                        transition: 0.5s ease all;
+
+                        &:hover{
+                            background-color: #FF7A85;
+                            color: white;
+                        }
+                    }
+                }
+
+
+                .learn-more{
+                    a{
+                        color: white;
+                        border: 1px solid white;
+                        border-radius: 20rem;
+                        padding: 1rem 2rem;
+                        font-weight: 700;
+                        font-size: 1.4rem;
+                        transition: 0.5s ease all;
+
+
+                        &:hover{
+                            background-color: white;
+                            color: #FF3D54;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+.designed-future{
+    width: 100%;
+    background: hsl(0, 26%, 96%);
+
+    .container{
+        flex-direction: column;
+
+        .designed-title{
+            margin-top: 15rem;
+            font-size: 2.9rem;
+            color:#1f3f5b;
+            font-family: 'Overpass', sans-serif;
+            margin-left: 15rem;
+        }
+        .designed-wrapper{
+
+            display: flex;
+            align-items: center;
+            margin-left: 8.6rem;
+
+
+
+            .designed-text{
+                font-family: 'Overpass', sans-serif;
+                margin-left: 8rem;
+                h3{
+                    font-size: 2.9rem;
+                    color: #1f3f5b;
+                    margin-bottom: 5rem;
+                    text-align: center;
+                }
+
+                p{
+                    font-size: 1.9rem;
+                    width: 65rem;
+                    color: black;
+                    margin-bottom: 5rem;
+                }
+            }
+
+
+            .designed-image{
+                .editor-desktop{
+                    width: 150%;
+                }
+
+                .editor-mobile{
+                    display: none;
+                }
+            }
+
+
+
+        }
+    }
+
+
+
+}
+
+
+.state-art{
+    background-color: #2C2D3F;
+    border-top-right-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    margin-top: 10rem;
+
+    .state-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8rem 10rem;
+        position: relative;
+
+        
+
+        .state-image{
+            flex-basis: 40%;
+            width: 100%; /* Div'in boyutlarını istediğiniz gibi ayarlayın */
+            height: auto;
+            position: relative;
+            z-index: 4;
+            background-image: url("./../images/illustration-phones.svg");
+            background-repeat:no-repeat ;
+            background-position: center;
+            background-size: cover;
+            .phone{
+                position: absolute;
+                left: -5rem;
+                top: -25rem;
+                z-index: 3;
+            }
+
+
+            .circle{
+                position: absolute;
+                left: -40rem;
+                top: -95rem;
+                z-index: 1;
+                width: 250%;
+            }
+        }
+
+        .state-text{
+            flex-basis: 50%;
+            text-align: center;
+            h3{
+                font-size: 3.7rem;
+                font-weight: 600;
+                color: white;
+                margin-bottom: 5rem;
+            }
+
+            p{
+                font-size: 1.8rem;
+                color: white;
+                width: 60rem;
+            }
+        }
+    }
+
+}
+
+
+
+.features{
+    width: 100%;
+    background: hsl(0, 26%, 96%);
+    position: relative;
+    padding: 15rem 10rem 15rem 0;
+
+    .features-wrapper{
+        margin-top: 10rem;
+        margin-bottom: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+
+        .features-image{
+            position: relative;
+            flex-basis: 50%;
+            .features-desktop{
+                position: absolute;
+                left: -18rem;
+                top: -30rem;
+            }
+
+
+            .features-mobile{
+                display: none;
+            }
+        }
+
+        .features-text{
+            font-family: 'Overpass', sans-serif;
+            flex-basis:40%;
+            margin-left: 10rem;
+            text-align: center;
+
+            .setting-title{
+                color: #1f3f5b;
+                font-size: 2.9rem;
+                font-weight: 700;
+                margin-bottom: 3.5rem;
+            }
+
+
+            .setting-desc{
+                color: #1f3f5b;
+                font-size: 1.5rem;
+                margin-bottom: 4.5rem;
+                font-weight: 300;
+                padding-inline: 3rem;
+            }
+        }
+    }
+}
+
+
+footer{
+    width: 100%;
+    background: hsl(240, 10%, 16%);
+    border-top-right-radius: 10rem;
+
+    .container{
+        flex-direction: column;
+        .footer-wrapper{
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            column-gap: 25rem;
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: 5rem;
+    
+            h6{
+                font-size: 1.6rem;
+                color: white;
+                font-weight: 500;
+                margin-bottom: 4.3rem;
+            }
+    
+            ul{
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                li{
+                    a{
+                        color: white;
+                        font-weight: 300;
+                        opacity: 0.7;
+                        font-size: 1.6rem;
+                    }
+    
+                    &:hover a{
+                        text-decoration: underline;
+                    }
+                }
+            }
+    
+        }
+
+
+
+        .coder{
+            text-align: center;
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+            span{
+                color: gray;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: 400;
+                font-size: 1.6rem;
+                margin-bottom: 5rem;
+    
+    
+    
+                a{
+                    color: white;
+    
+                }
+            }
+    
+        }
+    }
+
+
+}
+
+
+
+
+//! responsive
+
+
+@media (max-width: 991px){
+
+    .container{
+        width: 100%;
+    }
+
+    .first-screen{
+        background-size: 400%;
+        header{
+            .container{
+               
+                .header-wrapper{
+                    .header-left{
+
+
+
+
+    
+                        .header-navbar{
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+
+                            height: auto;
+                            
+                            .navbar-list{
+                                display: none;
+                            }
+
+                            #navbar-mobile{
+                                display: block;
+                                position: absolute;
+                                top: 3rem;
+                                right:0;
+                                transform: translateX(-90rem);
+                                transition: .7s;
+
+                                .navbar-mobile-list{
+                                    width: 400%;
+                                    
+                                    background-color: white;
+                                    box-shadow: -6px 1px 35px 0px rgba(0,0,0,0.75);
+                                    border-radius: 1rem;
+                                    li{
+                                        position: relative;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-direction: column;
+                                        padding: 1.5rem 2rem;
+                                        margin-top: 1rem;
+                                        .mobile-item{
+                                            display: flex;
+                                            align-items: center;
+                                            column-gap: 0.6rem;
+    
+                                            a{
+                                                font-size: 1.9rem;
+                                                color: #1f3f5b;
+                                                font-weight: 400;
+                                                font-family: 'Overpass', sans-serif;
+                                            }
+
+
+                                        }
+    
+    
+                                        .dropdown-navbar{
+                                            display: none;
+                                            background-color: #EDE9E9;
+                                            padding: 1rem 0;
+                                            width: 100%;
+
+
+                                            ul{
+                                                li{
+                                                    a{
+                                                        font-size: 1.6rem;
+                                                        color: #1f3f5b;
+                                                        font-weight: 400;
+                                                        font-family: 'Overpass', sans-serif;
+                                                    }
+
+
+                                                }
+                                            }
+                                        }
+    
+                                        &:hover .dropdown-navbar{
+                                            display: block;
+                                            margin-top: 0;
+                                            
+                                        }
+    
+                                    }
+
+                                    .signup{
+                                        a{
+                                            font-family: 'Ubuntu', sans-serif;
+                                            font-weight: 700;
+                                            font-size: 1.4rem;
+                                            color: white !important;
+                                            background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+                                            padding: 1.5rem 4rem;
+                                            border-radius: 10rem;
+                                            transition: 0.5s ease all;
+
+
+                                            &:hover{
+                                                background: linear-gradient(90deg, hsl(353, 100%, 62%) ,hsl(13, 100%, 72%) );
+                                                
+                                            }
+                                        }
+                                    }
+                                }   
+                            }
+
+                        }
+
+                        
+                            
+                        
+                    }
+    
+                    .account-manager{
+                        display: none;
+                    }
+    
+                    .header-bar{
+                        display: block;
+                        .close{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    
+        .get-started{
+            .get-wrapper{
+                .get-title{
+                    h3{
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+    
+    }
+
+    .designed-future{
+        .container{
+
+            .designed-title{
+                font-size: 2rem;
+                margin-left: 0;
+                margin-top: 5rem;
+            }
+
+            .designed-wrapper{
+                flex-direction: column-reverse;
+                margin-left: 0;
+
+
+                .designed-image{
+                    margin-top: 3rem;
+                    margin-left: -20rem;
+                    .editor-desktop{
+                        display: none;
+                    }
+
+
+                    .editor-mobile{
+                        display: block;
+                        width: 150%;
+                    }
+
+                    margin-bottom: 5rem;
+                }
+
+
+                .designed-text{
+                    margin-left: 0;
+
+                    h3{
+                        text-align: center;
+                    }
+
+
+                    p{
+                        width: 70rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .state-art{
+
+    
+        .state-wrapper{
+            margin-top: 10rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+
+
+
+
+            .state-image{
+                margin-bottom: 20rem;
+                .phone{
+                    top: -30rem;
+                    width: 75%;
+                    left: 10rem;
+                }
+            }
+
+
+            .state-text{
+                text-align: center;
+
+                p{
+                    width: 75rem;
+                }
+
+            }
+    
+        
+        }
+    
+    }
+
+
+
+
+    .features{
+        padding: 0;
+        .features-wrapper{
+            margin-top: 0;
+            flex-direction: column;
+            .features-image{
+                margin-top: 0;
+                margin-right: 20rem;
+
+                .features-desktop{
+                    display: none;
+                }
+
+
+                .features-mobile{
+                    display: block;
+                    width: 150%;
+                    
+                }
+            }
+
+            .features-text{
+                p{
+                    line-height: 3rem;
+                }
+            }
+        }
+    }
+
+
+    footer{
+        .footer-wrapper{
+            flex-direction: column;
+            text-align: center;
+            gap: 5rem;
+        }
+    }
+    
+}
+
+
+
+
+@media(max-width: 450px){
+    .first-screen{
+        header{
+            .container{
+                margin-bottom: 0;
+
+                .header-wrapper{
+                    .header-left{
+                        .logo{
+                            margin-left: -7rem;
+                        }
+        
+                        .header-navbar{
+                            #navbar-mobile{
+                                .navbar-mobile-list{
+                                    width: 200%;
+                                }
+                                
+                            }
+                        }
+        
+        
+                    }
+        
+                    .header-bar{
+                        margin-right: -5rem;
+                    }
+
+                }
+            }
+
+
+        }
+
+        .get-started{
+            .container{
+                .get-wrapper{
+                    margin-top:9rem;
+
+
+
+
+
+            
+                    .get-title{
+                        h3{
+                            font-size: 3.5rem;
+                            width: 34rem;
+                            text-align: center;
+                        }
+                    }
+
+
+
+                    .get-text{
+                        p{
+                            margin-top: 1.5rem;
+                            font-size: 2rem;
+                        }
+                    }
+
+
+
+
+                    .get-buttons{
+                        margin-top: 5rem;
+
+                        .start-free{
+                            a{
+                                padding: 1rem 1.1rem;
+                            }
+                        }
+
+                        .learn-more{
+                            a{
+                                padding: 0.9rem 1rem;
+                            }
+                        }
+                    }
+
+
+
+                    }
+
+
+                }
+            }
+        }
+        .designed-future{
+            .designed-wrapper{
+
+
+
+
+
+                .designed-image{
+                    padding: 0 16rem;
+                    .editor-mobile{
+                        width: 110%;
+                        height: auto;
+                        margin-left: 3rem;
+                    }
+                }
+
+                .designed-text{
+                    .first-title, .second-title{
+                        h3{
+                            text-align: center;
+                            width: 30rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+    
+                    .first-desc, .second-desc{
+                        p{
+                            text-align: center;
+                            width: 35rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .state-art{
+            .state-wrapper{
+
+
+                .state-image{
+                    margin-bottom: 2rem;
+
+                    .phone{
+                        width: 150%;
+                        left: 0rem;
+                    }
+                }
+                .state-text{
+                    .state-title{
+                        h3{
+                            font-size: 2.8rem;
+                            text-align: center;
+                            width: 30rem;
+                        }
+                    }
+
+                    p{
+                        font-size: 1.6rem;
+                        text-align: center;
+                        width: 30rem;
+                    }
+                }
+            }
+        }
+
+
+
+        .features{
+            .container{
+                .features-wrapper{
+                    .features-image{
+                        .features-mobile{
+                            width: 200%;
+                        }
+                    }
+    
+                    .features-text{
+                        margin-top: 2rem;
+                        margin-left: 0;
+    
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+@media(max-width: 330px){
+    .first-screen{
+        header{
+            .container{
+                .header-wrapper{
+                    .header-left{
+                        .header-navbar{
+                            #navbar-mobile{
+                                margin-right: 2rem;
+
+
+                                .navbar-mobile-list{
+                                    width: 175%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .designed-future{
+        .container{
+            .designed-title{
+                h2{
+                    font-size: 2.5rem;
+                }
+            }
+            .designed-wrapper{
+                .designed-text{
+                    width: 20rem;
+                    margin-left: -15rem;
+                    p{
+                        font-size: 1.5rem;
+                        padding-inline: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .features{
+        .container{
+            .features-wrapper{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+
+}
+
+
+
+
